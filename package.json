@@ -1,10 +1,7 @@
 {
-  "devDependencies": {
-    "webpack-cli": "^5.1.4"
-  },
   "name": "my_project",
-  "description": "",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "dependencies": {
     "acorn": "^8.11.2",
@@ -87,11 +84,13 @@
     "uri-js": "^4.4.1",
     "watchpack": "^2.4.0",
     "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
     "webpack-merge": "^5.10.0",
     "webpack-sources": "^3.2.3",
     "which": "^2.0.2",
     "wildcard": "^2.0.1"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
