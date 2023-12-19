@@ -145,6 +145,7 @@ $(function () {
   }
 });
 
+//참고: https://velog.io/@minyoungdumb/JS-API-fetch
 
 
 

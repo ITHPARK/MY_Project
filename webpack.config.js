@@ -54,7 +54,8 @@ module.exports = {
   // 번들링 후 결과물의 처리방식 등 다양한 플러그인 사용을 위한 구성요소 추가 
   plugins: [ 
     new HtmlPlugin({ // 생성자를 이용한 플러그인 생성 
-      template: './src/resource/html/webpack_test.html' // 템플릿 연결 
+      template: './src/resource/html/webpack_test.html',
+      env: process.env.NODE_ENV === 'development' ? '(개발용)' : '', // 템플릿 연결 
     }),
     new CopyPlugin ({
       patterns: [
