@@ -59,6 +59,9 @@ let arr2 = [10, 20, 30];
 let arr3 = ["lion", "tiger"];
 let arr4 = ["sejong", 182];
 //객체
+//일반 객체 타입
+//타입을 object로 정의하면, any 타입처럼 모든 타입의 값을 할당할 수 있다. 하지만 타입스크립트의 사용 목적의 본질을 흐림
+let info = { name: "yeom", age: 29 };
 let obj = { name: "yeom", age: 29 };
 let person;
 //불린
