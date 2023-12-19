@@ -66,7 +66,13 @@ let arr3: Array<string> = ["lion", "tiger"];
 let arr4: [string, number] = ["sejong", 182];
 
 //객체
-let obj: object = { name: "yeom", age: 29 };
+//객체의 타입을 명확하게 정의하기 위해 인터페이스를 정의 후 객체의 타입을 정의한 인터페이스로 지정해준다.
+interface User {
+  name: string,
+  age: number
+}
+
+let obj: User = { name: "yeom", age: 29 };
 let person: { name: string , age: number };
 
 //불린
