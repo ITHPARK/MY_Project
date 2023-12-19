@@ -94,13 +94,17 @@
     "wildcard": "^2.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "clean": "tsc --build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
-    "html-webpack-plugin": "^5.5.4"
+    "html-webpack-plugin": "^5.5.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }

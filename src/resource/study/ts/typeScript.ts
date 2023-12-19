@@ -1,4 +1,4 @@
-// app.ts
+
 const logName = (name: string) => {
   console.log(name);
 }
