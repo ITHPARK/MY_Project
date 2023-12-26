@@ -65,7 +65,11 @@ let arr2: number[] = [10, 20, 30];
 let arr3: Array<string> = ["lion", "tiger"];
 let arr4: [string, number] = ["sejong", 182];
 
-//객체
+//객체 (object타입은 인터페이스와 클래스의 상위 타입이다.)
+
+/*
+  object 타입으로 선언된 변수는 number, boolean, string 타입의 값을 가질 수는 없지만, 다음처럼 속성 이름이 다른 객체를 모두 자유롭게 담을 수 있다.
+*/
 
 //일반 객체 타입
 //타입을 object로 정의하면, any 타입처럼 모든 타입의 값을 할당할 수 있다. 하지만 타입스크립트의 사용 목적의 본질을 흐림
@@ -79,7 +83,12 @@ interface User {
 }
 
 let obj: User = { name: "yeom", age: 29 };
+let obj2: User = { name: "park", age: 29 };
+//obj에 name과 age속성이 모두 들어가있지 않거나 name과 age를 제외한 다른 속성을 넣으면 오류가 발생한다.
+
 let person: { name: string , age: number };
+
+
 
 //불린
 let isAvaliable: boolean = true;
@@ -103,6 +112,9 @@ function sum(a: number, b: number): number {
 }
 
 sum(1, 2);
+
+
+
 
 
 
