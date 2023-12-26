@@ -48,6 +48,7 @@
 */
 
 //참고: https://yeomkyeorae.github.io/typesciprt/basic_typescript/#%EB%AC%B8%EC%9E%90%EC%97%B4
+//https://joshua1988.github.io/ts/intro.html
 
 //1.기본 TS 타입 선언
 //let str: string = 'hello'; 변수명 뒤에 데이터 타입을 입력한다.
@@ -112,7 +113,6 @@ function sum(a: number, b: number): number {
 }
 
 sum(1, 2);
-
 
 
 
