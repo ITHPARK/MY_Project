@@ -47,6 +47,7 @@
   타입스크립트는 자바스크립트의 이런 단점을 보완한 언어로 대부분의 에러를 컴파일 환경에서 코드를 입력하는 동안 체크할 수 있다.
 */
 //참고: https://yeomkyeorae.github.io/typesciprt/basic_typescript/#%EB%AC%B8%EC%9E%90%EC%97%B4
+//https://joshua1988.github.io/ts/intro.html
 //1.기본 TS 타입 선언
 //let str: string = 'hello'; 변수명 뒤에 데이터 타입을 입력한다.
 //문자열
@@ -57,7 +58,9 @@ let num = 100;
 let arr = [10, 20, 30];
 let arr2 = [10, 20, 30];
 let arr3 = ["lion", "tiger"];
-let arr4 = ["sejong", 182];
+//투플
+//투플은 배열의 길이가 고정되고 각 요소의 타입이 지정되어 있는 배열 형식을 의미.
+let arrTuple = ['hi', 10];
 //객체 (object타입은 인터페이스와 클래스의 상위 타입이다.)
 /*
   object 타입으로 선언된 변수는 number, boolean, string 타입의 값을 가질 수는 없지만, 다음처럼 속성 이름이 다른 객체를 모두 자유롭게 담을 수 있다.
@@ -77,10 +80,41 @@ console.log({
     arr,
     arr2,
     arr3,
-    arr4,
+    arrTuple,
     obj,
     isAvaliable,
 });
+//Enum 
+//특정 값(상수)들의 집합을 의미한다. 이 안에 item은 멤버라고 부른다.
+var squad;
+(function (squad) {
+    squad[squad["Hero1"] = 2] = "Hero1";
+    squad[squad["Hero2"] = 3] = "Hero2";
+    squad[squad["Hero3"] = 4] = "Hero3";
+})(squad || (squad = {}));
+console.log(squad[0]); //undefined
+//0을 할당한 멤버가 없으니 undefined
+var squad1;
+(function (squad1) {
+    squad1[squad1["Hero1"] = 0] = "Hero1";
+    squad1[squad1["Hero2"] = 1] = "Hero2";
+    squad1[squad1["Hero3"] = 2] = "Hero3";
+})(squad1 || (squad1 = {}));
+console.log(squad1[0]); //undefined
+//인덱스 값으로도 접근 가능
+var week;
+(function (week) {
+    week[week["Sun"] = 3] = "Sun";
+    week[week["Mon"] = 4] = "Mon";
+    week[week["Tue"] = 5] = "Tue";
+    week[week["Wed"] = 6] = "Wed";
+    week[week["Thu"] = 7] = "Thu";
+    week[week["Fri"] = 8] = "Fri";
+    week[week["Sat"] = 9] = "Sat";
+})(week || (week = {}));
+console.log(week.Wed); // 3
+console.log(week['Wed']); // 3
+console.log(week[2]); // 'Tue'
 //2.함수 선언
 function sum(a, b) {
     console.log(a + b);

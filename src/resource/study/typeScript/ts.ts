@@ -64,7 +64,10 @@ let num: number = 100;
 let arr: Array<number> = [10, 20, 30];
 let arr2: number[] = [10, 20, 30];
 let arr3: Array<string> = ["lion", "tiger"];
-let arr4: [string, number] = ["sejong", 182];
+//투플
+//투플은 배열의 길이가 고정되고 각 요소의 타입이 지정되어 있는 배열 형식을 의미.
+let arrTuple: [string, number] = ['hi', 10];
+
 
 //객체 (object타입은 인터페이스와 클래스의 상위 타입이다.)
 
@@ -100,10 +103,53 @@ console.log({
   arr,
   arr2,
   arr3,
-  arr4,
+  arrTuple,
   obj,
   isAvaliable,
 });
+
+//Enum 
+//특정 값(상수)들의 집합을 의미한다. 이 안에 item은 멤버라고 부른다.
+
+enum squad {
+  Hero1 = 2,
+  Hero2 = 3,
+  Hero3 = 4
+}
+
+console.log(squad[0]); //undefined
+//0을 할당한 멤버가 없으니 undefined
+
+enum squad1 {
+  Hero1,
+  Hero2,
+  Hero3
+}
+console.log(squad1[0]); //Hero1
+/*
+  멤버에 따로 값이 할당 되지 않았다면 
+  순차적으로 0 부터 자동 할당된다고 보면 됨.
+*/
+
+
+//인덱스 값으로도 접근 가능
+
+enum week {
+  Sun = 3,
+  Mon = 4,
+  Tue = 5,
+  Wed = 6,
+  Thu = 7,
+  Fri = 8,
+  Sat = 9 
+}
+
+console.log(week.Wed); // 3
+console.log(week['Wed']); // 3
+console.log(week[2]); // 'Tue'
+
+
+
 
 
 //2.함수 선언

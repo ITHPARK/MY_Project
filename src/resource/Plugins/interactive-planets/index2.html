@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Construct planets like gods with jQuery Planetarium</title>
+		<meta name="description" content="Introducing, jQuery Planetarium. A little fun plugin I created to allow you to easily construct a planet, define its features like rings, patterns, weather, colors of air." />
+		<meta name="keywords" content="interactive earth, jquery earth, jquery planet, jquery rings" />
+		<meta name="author" content="Author for Onextrapixel" />
+		<link rel="shortcut icon" href="../file/favicon.gif"> 
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+    	<script type="text/javascript" src="js/jquery.planetarium.js"></script>
+    
+    	<link rel="stylesheet" type="text/css" href="css/planetarium.css" />
+		<!-- Edit Below -->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="../file/js/modernizr.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navi -->
+			<div class="nav-top clearfix">
+				<span class="right"><a class="nav-icon icon-th" href="http://www.onextrapixel.com/category/tutorials/"><span>View all Tutorials</span></a></span>
+				<span class="right"><a class="nav-icon icon-left" href="http://www.onextrapixel.com/2014/04/01/construct-interactive-planets-and-build-the-universe-on-your-website/"><span>Back to Tutorial Article</span></a></span>
+			</div>
+
+			<div class="header">
+				<h1>jQuery Planetarium: Size, Angle and Atmosphere</h1>	
+			</div>
+
+			<div class="menu">
+				<a href="index.html">Demo 1</a>
+				<a class="active" href="index2.html">Demo 2</a>
+				<a href="index3.html">Demo 3</a>
+				<a href="index4.html">Demo 4</a>
+				<a href="index5.html">Demo 5</a>
+			</div>
+		
+    	<div class="main">
+        <div class="saturn planet"></div>
+    	</div>
+    	<script type="text/javascript">
+        $(".planet").planetarium({
+          autospin: "1000ms",
+          angle: "60deg",
+          glow: "0 0 50px rgba(111,111,244,0.55), inset 33px 20px 50px rgba(0,0,0,0.5)",
+          size: "300x300",
+          space: "html, body"
+        });
+      </script>
+	</div><!-- Container -->
+		
+	</body>
+</html>
