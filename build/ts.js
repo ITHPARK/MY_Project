@@ -100,7 +100,11 @@ var squad1;
     squad1[squad1["Hero2"] = 1] = "Hero2";
     squad1[squad1["Hero3"] = 2] = "Hero3";
 })(squad1 || (squad1 = {}));
-console.log(squad1[0]); //undefined
+console.log(squad1[0]); //Hero1
+/*
+  멤버에 따로 값이 할당 되지 않았다면
+  순차적으로 0 부터 자동 할당된다고 보면 됨.
+*/
 //인덱스 값으로도 접근 가능
 var week;
 (function (week) {
@@ -115,6 +119,23 @@ var week;
 console.log(week.Wed); // 3
 console.log(week['Wed']); // 3
 console.log(week[2]); // 'Tue'
+//any 
+//모든 타입의 대해서 허용한다는 의미를 가지고 있음
+let typeAny1 = "hi";
+let typeAny2 = 123;
+let typeAny3 = ['a', 5, false];
+console.log('any타입 변수선언 ' + typeAny1, typeAny2, typeAny3);
+//void 
+//변환 값이 없는 함수의 반환 타입. 함수에 return이 없거나 return이 있어도 값이 없는경우 함수 반환 타입을 void로 지정.
+function typeVoid1() {
+    console.log('sth');
+}
+function typeVoid2() {
+    console.log('void');
+    return;
+}
+typeVoid1();
+typeVoid2();
 //2.함수 선언
 function sum(a, b) {
     console.log(a + b);

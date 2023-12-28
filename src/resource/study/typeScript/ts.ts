@@ -149,7 +149,31 @@ console.log(week['Wed']); // 3
 console.log(week[2]); // 'Tue'
 
 
+//any 
+//모든 타입의 대해서 허용한다는 의미를 가지고 있음
 
+let typeAny1: any = "hi";
+let typeAny2: any = 123;
+let typeAny3: any = ['a', 5, false];
+
+console.log('any타입 변수선언 ' + typeAny1, typeAny2, typeAny3);
+
+
+//void 
+//변환 값이 없는 함수의 반환 타입. 함수에 return이 없거나 return이 있어도 값이 없는경우 함수 반환 타입을 void로 지정.
+
+function typeVoid1(): void {
+  console.log('sth');
+}
+
+function typeVoid2(): void {
+
+  console.log('void');
+  
+  return;
+}
+
+typeVoid1(); typeVoid2();
 
 
 //2.함수 선언
